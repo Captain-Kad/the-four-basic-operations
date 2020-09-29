@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The four basic operations</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="the-four-basic-operations.css"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <h1>The Four Basic Operations</h1>
+          <p class="info">
+            In this program you can do the addition, subtraction, multiplication
+            and division of any two numbers.
+          </p>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <p></p>
+
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <input
+            id="firstNumber"
+            class="form-control"
+            type="number"
+            placeholder="Please enter your first number here"
+            required
+          />
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <p></p>
+
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <input
+            id="secondNumber"
+            class="form-control"
+            type="number"
+            placeholder="Please enter your second number here"
+            required
+          />
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <p></p>
+
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <strong
+            ><p style="text-align: center">
+              Please select the operation you will be working with:
+            </p></strong
+          >
+          <div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="basic-operations"
+                value="addition"
+                checked
+              />
+              <label class="form-check-label"> Addition </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="basic-operations"
+                value="subtraction"
+              />
+              <label class="form-check-label"> Subtraction </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="basic-operations"
+                value="multiplication"
+              />
+              <label class="form-check-label"> Multiplication </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="basic-operations"
+                value="division"
+              />
+              <label class="form-check-label"> Division </label>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+      <p></p>
+
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+          <button
+            class="btn btn-primary btn-area"
+            onclick="basicOperationsChoice()"
+          >
+            Calculate
+          </button>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 alert alert-success">
+          <h2><span id="result"></span></h2>
+        </div>
+        <div class="col-md-3"></div>
+      </div>
+    </div>
+
+    <script src="the-four-basic-operations.js"></script>
+  </body>
+</html>
